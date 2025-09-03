@@ -1,0 +1,74 @@
+# ────────────── Python ──────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# PyInstaller
+*.spec
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Logs
+*.log
+logs/
+*.pid
+
+# ────────────── Databases ──────────────
+*.db
+*.sqlite3
+instance/
+migrations/versions/
+
+# Alembic migration cache
+alembic.ini
+alembic/env.pyc
+
+# ────────────── FastAPI / Uvicorn ──────────────
+# Uvicorn reload artifacts
+*.reload*
+
+# ────────────── IDEs / Editors ──────────────
+.vscode/
+.idea/
+*.iml
+
+# ────────────── OS Files ──────────────
+.DS_Store
+Thumbs.db
+
+# ────────────── Docker ──────────────
+*.pid
+*.seed
+*.bak
+*.swp
+docker-compose.override.yml
+.env
+
+# ────────────── Local configs ──────────────
+# Don’t commit secrets!
+.env.local
+.env.*.local
+
+# ────────────── Cache ──────────────
+*.cache/
