@@ -23,7 +23,7 @@ def signup_user(user: UserCreate,db:Session=Depends(get_db)):
         new_user=User(name=user.name, email=user.email, password=hashed_password)
         db.add(new_user)
         db.commit()
-        return user_db
+        return new_user
 
 @router.post("/login")
 def login_user(user:UserLogin,db:Session=Depends(get_db)):
